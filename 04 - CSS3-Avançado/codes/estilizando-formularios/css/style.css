@@ -1,0 +1,37 @@
+/* Estilizando formulários */
+body {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
+fieldset {
+    margin: 1em 0; /* 1em para o top e 0 para as laterais */
+    padding: 1em;
+    border: 1px solid #CCC;
+    background: #f8f8f8;
+}
+
+legend {
+    font-weight: bold;
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+input { /* input[type="text"] definindo que apenas os input's com os type's "text" serão alterados */
+    width: 20em;
+}
+
+textarea {
+    width: 20em;
+    height: 10em;
+}
+
+input.radio, input.checkbox, input.submit { /* outra forma de diferenciar os input pra ficar com a largura padrão */
+    width: auto;
+}
+
+.radio {
+    margin-right: 1em;
+}

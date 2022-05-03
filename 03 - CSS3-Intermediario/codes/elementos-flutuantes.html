@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flutuantes</title>
+
+    <style>
+
+        #principal {
+            border: 5px solid red;
+            background: green;
+        }
+
+        .conteudo {
+            background: blue;
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px; /* espaçamento entre os conteudos */
+            /* quando mas de um conteudo entra no fluxo de float eles respeitão os espaços assim ficando um do lado do outro */
+            float: right;
+        }
+
+        /* .conteudo1 {
+            background: red;
+            border: 1px solid gray;
+            width: 150px;
+            height: 150px;
+
+            tipos de float
+
+            obs > o float faz com que o conteudo vá a um fluxo diferento dos demais do documento sendo assim se sobrepondo/flutuando.
+
+            right - faz com que o conteudo flutue à direita
+
+            left - faz com que o conteudo flutue à esquerda
+
+            float: right;
+        } */
+
+        .conteudo-zero {
+            background: red;
+            border: 1px solid gray;
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+        }
+
+        /* forma de limpar o fluxo fluatuante */
+        .clear {
+        /* tipos de clear
+        left -> É uma palavra-chave que indica que o elemento foi movido para baixo para limpar os últimos flutuantes da esquerda.
+        right -> É uma palavra-chave que indica que o elemento foi movido para baixo para limpar os últimos flutuantes da direita.
+        both -> É uma palavra-chave que indica que o elemento será movido para baixo para limpar os elementos flutuantes do lado esquerdo e direito.
+        */
+            clear: both;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <div id="principal">
+        <div class="conteudo">
+            Conteúdo 1
+        </div>
+        <div class="conteudo">
+            Conteúdo 2
+        </div>
+        <div class="conteudo">
+            Conteúdo 3
+        </div>
+
+        <p class="clear">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sollicitudin imperdiet dolor, vel finibus lacus fringilla in. Ut rhoncus, justo vitae ullamcorper pulvinar, lacus metus vestibulum libero, vitae condimentum purus nisi id erat. Sed sagittis turpis non dignissim fermentum. Praesent pretium dolor ut libero vulputate rhoncus sit amet sit amet turpis. Nam fermentum ultrices quam at facilisis. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Vivamus placerat mauris blandit libero faucibus, sit amet lobortis enim vulputate. Nunc sodales sem nec sapien fermentum dapibus. Vestibulum ac tellus maximus, elementum ex at, suscipit ante. Morbi tristique massa in metus tempor, ac tempor risus ornare. Morbi dolor velit, elementum eu metus ac, lacinia congue eros. Quisque faucibus odio vel erat bibendum consequat. Pellentesque lectus odio, lacinia et ex eget, tincidunt auctor eros. Fusce viverra est risus, a volutpat magna dignissim id.
+        </p>
+
+        <!-- <div class="clear"></div> -->
+
+    </div>
+
+</body>
+</html>

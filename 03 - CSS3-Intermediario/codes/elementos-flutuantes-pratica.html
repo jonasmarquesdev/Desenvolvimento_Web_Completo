@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos flutuantes</title>
+
+    <style>
+
+        body {
+            background: #F4F4F4;
+        }
+
+        #principal {
+            width: 920px;
+        }
+
+        .noticia {
+            background: #E5E5E5;
+            padding: 5px; /* espaçamento interno*/
+            width: 280px;
+            margin: 7px; /* espaçamento externo*/
+            float: left;
+        }
+
+        .imagem-galeria {
+            /* moldura pra o fundo da imagem */
+            background: white;
+            width: 265px;
+            padding: 5px; /* espaçamento interno*/
+            /* moldura pra o fundo da imagem */
+            float: left;
+            margin: 15px; /* espaçamento externo*/
+        }
+
+        .clear {
+            clear: both;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="principal"> <!-- inicio principal -->
+
+        <div>
+        
+            <div class="noticia"> <!-- inicio principal -->
+                <h2>Lorem ipsum dolor 1</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem quia, beatae, ducimus dicta eos possimus unde nostrum esse cumque ab voluptates harum vitae eveniet, commodi debitis vero eius fugit autem.
+                </p>
+                <a href="#">Veja mais</a>
+            </div>
+            <div class="noticia">
+                <h2>Lorem ipsum dolor 2</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem quia, beatae, ducimus dicta eos possimus unde nostrum esse cumque ab voluptates harum vitae eveniet, commodi debitis vero eius fugit autem.
+                </p>
+                <a href="#">Veja mais</a>
+            </div>
+            <div class="noticia">
+                <h2>Lorem ipsum dolor 3</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem quia, beatae, ducimus dicta eos possimus unde nostrum esse cumque ab voluptates harum vitae eveniet, commodi debitis vero eius fugit autem.
+                </p>
+                <a href="#">Veja mais</a>
+            </div>
+
+            </div> <!-- fim noticia -->
+
+            <div class="clear"></div> <!-- limpando o float da class noticia-->
+
+            <div>
+
+                <div class="imagem-galeria">
+                    <img src="../imagens/imagem1.png">
+                    <p>Resumo</p>
+                </div>
+
+                <div class="imagem-galeria">
+                    <img src="../imagens/imagem2.png">
+                    <p>Resumo</p>
+                </div>
+
+                <div class="imagem-galeria">
+                    <img src="../imagens/imagem3.png">
+                    <p>Resumo</p>
+                </div>
+
+                <div class="imagem-galeria">
+                    <img src="../imagens/imagem4.png">
+                    <p>Resumo</p>
+                </div>
+
+                <div class="imagem-galeria">
+                    <img src="../imagens/imagem5.png">
+                    <p>Resumo</p>
+                </div>
+            </div>
+
+    </div> <!-- fim principal -->
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamentos (static, relative, absolute e fixed)</title>
+
+    <style>
+
+        /* 
+        Tipos de posicionamentos
+        static -> 
+        relative ->
+        absolute ->
+        fixed ->
+        */
+
+        body{
+            background: #007FC7;
+        }
+
+        #container {
+            background: #fff;
+            width: 800px;
+            margin: 10px auto; /* top,right and left */
+            padding: 10px;
+            /* 
+            Se usar um (position: relative;) no container que esta o conteudo o posicionamento do conteudo com possition: absolute; vai ser baseado no posicionamento do container */
+            /* Caso seja removido o (position: relative;) que esta na classe que tem o conteudo dentro com o position: absolute;
+            o posicionamento do conteudo vai ser baseado no padrão do body que seria (static)
+            */
+            position: relative;
+        }
+
+        p{
+            width: 300px;
+        }
+
+        /* absolute -> é posicionado em relação ao container que tem uma posição se não ele vai ser posicionado baseado no corpo da página no caso o body que tem um poscionamento padrão (static) */
+        .absolute {
+            border: 1px solid red;
+            background: #f2f2f2;
+            position: absolute;
+            top: 80px;
+            right: 80px;
+        }
+
+        /* É interessante usar para chat de suport ou para menus */
+        /* É alinhado baseado na tela do navegador (viewport)*/
+        .fixed {
+            border: 1px solid red;
+            background: #f2f2f2;
+            margin: 0px;
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+        }
+
+        /* relative -> tem o alinhamento baseado na posição inicial do elemento voçê pode alinhar ele baseado na posição que ele tem */
+        .relative {
+            border: 1px solid red;
+            position: relative;
+            /* top, right, bottom e left */
+            /* 
+            top: -20px;
+            left: 80px;
+            right: 20px; */
+            bottom: -20px;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div id="container">
+        
+        <h1>Posicionamentos</h1>
+
+        <p>
+            P1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit illo exercitationem dolores qui, eveniet dolor similique quis culpa, tenetur autem rem harum incidunt quod beatae, repudiandae accusantium nam eum. Accusantium!
+        </p>
+
+        <p class="fixed">
+            P2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit illo exercitationem dolores qui, eveniet dolor similique quis culpa, tenetur 
+        </p>
+
+        <p>
+            P3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugit illo exercitationem dolores qui, eveniet dolor similique quis culpa, tenetur autem rem harum incidunt quod beatae, repudiandae accusantium nam eum. Accusantium!
+        </p>
+
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos inline, block e inline-block</title>
+
+    <style>
+
+        .borda {
+            border: 1px solid red;
+            /* 
+            tipos de inline
+            inline -> O elemento gera uma ou mais caixas de elementos inline.
+            block -> O elemento gera uma caixa de elemento de bloco.
+            inline-block -> O elemento gera uma caixa de elemento de bloco que fluirá com o conteúdo circundante, como se fosse uma única caixa embutida (se comportando como um elemento substituído)
+            */
+            display: inline-block;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <span class="borda">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sunt doloribus accusantium eaque suscipit vero distinctio perspiciatis ipsam? Assumenda provident, ipsa repudiandae a consequatur nisi quod commodi porro ea dolorum deleniti.</span>
+    <span class="borda">inline 2</span>
+
+    <!--
+        <div class="borda">Bloco 1</div>
+        <div class="borda">Bloco 2</div>
+    -->
+
+</body>
+</html>
