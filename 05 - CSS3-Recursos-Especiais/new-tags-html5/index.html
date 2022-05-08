@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novas tags html5</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- esse script serve para os navegadores antigos reconhecerem as tags antigas -->
+    <!--[if lt IE 9]>
+	    <script src="html5shiv.js"></script>
+    <![endif]-->
+
+</head>
+<body>
+    
+    <!-- Cabeçalho
+    Inves de: <div id="cabecalho"></div>
+    Se usa: <header></header>
+    -->
+
+    <!-- Barra de navegação
+     Inves de: <div id="navegacao"></div>
+     Se usa: <nav></nav>
+    -->
+
+    <!-- Conteúdo da página
+    Inves de: <div class="postagem"></div>
+    Pode se usar: <article></article>
+
+    Dentro de "article" Pode se usar: <section></section> serve para separar os conteudos
+    -->
+
+    <!-- Informação ao lado
+    <aside></aside>
+    serve para menus laterais ou informações variadas laterais, informações do autor, banner.
+    -->
+
+    <!-- Rodapé
+    Inves de: <div id="rodape"></div>
+    Se usa: <footer></footer> 
+    -->
+
+
+
+    <!-- cabeçalho -->
+    <header>
+        <h1>Logo</h1>
+        <span>Meu site</span>
+    </header>
+
+    <!-- barra de navegação -->
+    <nav>
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Sobre</a></li>
+            <li><a href="">Contato</a></li>
+        </ul>
+    </nav>
+
+    <!-- conteúdo da página -->
+    <article>
+        <h3>Novos cursos</h3>
+
+        <section>
+            <h4>Curso de programação</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, laboriosam perferendis ad quisquam vel non dolor enim neque saepe esse ut ullam explicabo culpa itaque aliquid unde. Ipsum, fuga. Culpa.
+            </p>
+
+            <span>
+                Atualizado em: 
+                <time>20/10/2020</time>
+            </span>
+
+        </section>
+
+        <section>
+            <h4>Curso de gráficos</h4>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, laboriosam perferendis ad quisquam vel non dolor enim neque saepe esse ut ullam explicabo culpa itaque aliquid unde. Ipsum, fuga. Culpa.
+            </p>
+
+            <span>
+                Atualizado em: 
+                <time>20/10/2020</time>
+            </span>
+
+        </section>
+
+    </article>
+
+    <!-- Informação ao lado -->
+    <aside>
+        <h3>Sobre o autor</h3>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </p>
+
+    </aside>
+
+    <!-- rodapé -->
+    <footer>
+        <p>&copy; 2022 - Jonas Marques</p>
+    </footer>
+
+    
+
+</body>
+</html>

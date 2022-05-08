@@ -1,0 +1,61 @@
+/* facilitando a visualizção */
+#container {
+    display: flex;
+}
+
+
+
+.caixa {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    /* aplicando sombra em caixa */
+    box-shadow: 20px 20px black;
+}
+
+#caixa h1 {
+    color: white;
+    /* text-shadow: 2px 2px red; */
+    text-shadow: 2px 2px rgb(247, 5, 5);
+}
+
+
+
+/* sombra com spread/espalhado em caixa */
+#caixadois {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    /* aplicando sombra em caixa usando tamb[em blur*/
+    box-shadow: 4px 4px 20px 20px /* <- esse ultimo parâmetro determina o spread */ rgba(170, 7, 251, 0.6);
+}
+
+#caixadois h1 {
+    color: white;
+    /* text-shadow: 2px 2px red; */
+    text-shadow: 20px 20px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* sombra em caixa */
+#caixatres {
+    width: 300px;
+    height: 300px;
+    padding: 8px;
+    margin: 20px;
+    background: #009670;
+    /* aplicando sombra em caixa usando blur*/
+    box-shadow: 4px 4px 20px rgba(170, 7, 251, 0.6);
+}
+
+/* Blur/borrão */
+#caixatres h1 {
+    color: aqua;
+    /* text-shadow: 2px 2px red; */
+    text-shadow: 2px 2px 20px /* <- esse ultimo parametro determina o spread */ rgba(170, 7, 251, 0.6);
+}

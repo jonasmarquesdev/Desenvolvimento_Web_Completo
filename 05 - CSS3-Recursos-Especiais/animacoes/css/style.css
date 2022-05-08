@@ -1,0 +1,120 @@
+/* facilitando a visualizção */
+#container {
+    display: flex;
+}
+
+div {
+    margin: 10px;
+}
+
+/* prefixos que devem ser usados para que funcione em diferentes navegadores
+ -webkit-
+ -moz-
+ -o-
+*/
+
+
+/* animação */
+@keyframes animacao-caixa {
+    from {/*estado inicial*/
+        background: aqua;
+        border-radius: 0px;
+    }
+    to {/*estado final*/
+        background: yellow;
+        border-radius: 300px;
+    }
+}
+
+/* versões com prefixos para browsers e com deslocamento em px's */
+
+/* prefixos */
+@-webkit-keyframes animacao-caixa2 {
+    from {/*estado inicial*/
+        background: aqua;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {/*estado final*/
+        background: yellow;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+@-moz-keyframes animacao-caixa2 {
+    from {/*estado inicial*/
+        background: aqua;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {/*estado final*/
+        background: yellow;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+@-o-keyframes animacao-caixa2 {
+    from {/*estado inicial*/
+        background: aqua;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {/*estado final*/
+        background: yellow;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+/* prefixos */
+
+@keyframes animacao-caixa2 {
+    from {/*estado inicial*/
+        background: aqua;
+        border-radius: 0px;
+        top: 0;
+        left: 0;
+    }
+    to {/*estado final*/
+        background: yellow;
+        border-radius: 300px;
+        top: 200px;
+        left: 200px;
+    }
+}
+
+
+#caixa {
+    width: 300px;
+    height: 300px;
+    background: red;
+    animation-name: animacao-caixa;
+    animation-duration: 5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; /* volta ao estado inicial de forma animada */
+    /* animation-direction: reverse; */
+
+    /*forma aninhada de definir os parametros*/
+    animation: animacao-caixa 5s 0s infinite alternate;
+}
+
+#caixa2 {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: red;
+    /* aplicando prefixos para funcionar em diferentes navegadores */
+    -webkit-animation: animacao-caixa2 5s 0s infinite alternate;
+    -moz-animation: animacao-caixa2 5s 0s infinite alternate;
+    -o-animation: animacao-caixa2 5s 0s infinite alternate;
+    /* aplicando prefixos para funcionar em diferentes navegadores */
+    animation: animacao-caixa2 5s 0s infinite alternate;
+}
