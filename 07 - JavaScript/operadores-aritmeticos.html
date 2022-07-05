@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Operadores aritméticos JavaScript</title>
+
+    <script>
+
+        // Adição (+) - Soma valores
+        // Subtração (-) - Diferença entre valores
+        // Multiplicação (*) - Produto dos valores
+        // Divisão (/) - Quonciente dos valores
+        // Módulo (%) - Resto existente em uma operação de divisão
+        // Incremento (++) - Pré/pós incremento
+        // Decremento (--) - Pré/pós decremento
+
+        var num1 = '2'
+        var num2 = '2'
+        //casting
+        num1 = parseInt(num1)
+        num2 = parseInt(num2)
+
+            document.write('<h1>Operadores</h1>')
+        document.write('A soma entre ' + num1 + ' e ' + num2 + ' é ' + (num1 + num2) + '<br/>')
+        document.write('A subtração entre ' + num1 + ' e ' + num2 + ' é ' + (num1 - num2) + '<br/>')
+        document.write('A multiplicação entre ' + num1 + ' e ' + num2 + ' é ' + (num1 * num2) + '<br/>')
+        document.write('A divisão entre ' + num1 + ' e ' + num2 + ' é ' + (num1 / num2) + '<br/>')
+        document.write('A módulo entre ' + num1 + ' e ' + num2 + ' é ' + (num1 % num2) + '<br/>')
+            document.write('<h1>Incremento e Decremento</h1>')
+            document.write('<h2>Incremento</h2>')
+        //incremento pré a esquerda da variável.
+        // disponibiliza o valor atualizado.
+        document.write('O incremento de ' + num1 + ' é ' + (++num1) + '<br/>')
+        //incremento pós a direita da variável.
+        // só disponibiliza o valor atualizado somente após a execução de incremento.
+        document.write('O incremento de ' + num1 + ' é ' + (num1++) + '<br/>')
+        document.write('O incremento de ' + num1 + ' é ' + (num1++) + '<br/>')
+            document.write('<h2>Decremento</h2>')
+        //decremento pré a esquerda da variável.
+        document.write('O decremento de ' + num1 + ' é ' + (--num1) + '<br/>')
+        //decremento pós a direita da variável.
+        document.write('O decremento de ' + num1 + ' é ' + (num1--) + '<br/>')
+        document.write('O decremento de ' + num1 + ' é ' + (num1--) + '<br/>')
+        // End
+
+
+            document.write('<h2>Operalções aritméticas na atribuição de valores</h2>')
+        var teste = 10
+        // para evitar usar essa expressão completa:
+        //teste = teste + 5
+        // é usado as seguintes formas de atribuições:
+        //teste += 5
+        //teste -= 5
+        //teste *= 5
+        //teste /= 2
+        //teste %= 3
+        document.write(teste + '<br/>')
+        document.write('<h3>concatenação de string</h3>')
+        // concatenação de string
+        var teste1 = 'Olá '
+        teste1 += 'Jorge'
+        document.write(teste1)
+
+            document.write('<h2>Precedência de execução das operações aritméticas</h2>')
+        document.write((11 + 5 - 5 * 2) / 2)
+
+        // 1º multiplicação e subtração
+        // 2º soma e subtração
+
+    </script>
+
+</head>
+
+<body>
+    
+
+
+</body>
+
+</html>
