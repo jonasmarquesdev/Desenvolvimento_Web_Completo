@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Operadores lágicos JavaScript</title>
+
+    <script>
+
+        /*
+        E (&&) - Verdadeiro se todos as expressões forem verdadeiras
+        OU (||) - Verdadeiro se pelo menos uma das expressões for verdadeira
+        Negação (!) - Inverte o resultado da expressão de comparação
+        */
+
+
+        document.write('Operador lógico E (&&)')
+        // Para o 'E' só é true se todos da expressão lágica forem true.
+
+        //true && true && false = false
+        if (2 == 2 && 3 >= 1 && 'a' == 'b') {
+            document.write('Verdadeiro')
+        } else {
+            document.write('<br /> Falso <br />')
+        }
+        //true && true && true = true
+        if (2 == 2 && 3 >= 1 && 'a' == 'a') {
+            document.write('Verdadeiro <br />')
+        } else {
+            document.write('Falso')
+        }
+
+
+        document.write('Operador lógico OU (||)')
+        // Para o 'OU' se um resultado for true a expressão inteira da true.
+
+        //true || true || false = true
+        if (2 == 2 || 3 >= 1 || 'a' == 'b') {
+            document.write('<br /> Verdadeiro <br />')
+        } else {
+            document.write('Falso')
+        }
+        //false || false || false = false
+        if (4 == 2 || 3 >= 5 || 'a' == 'b') {
+            document.write('Verdadeiro')
+        } else {
+            document.write('Falso <br />')
+        }
+
+        
+        document.write('Operador lógico Negação (!)')
+        // O 'Negação' inverte o resultado lógico da expressão.
+
+        //true = false
+        if (!(5 >= 2)) {
+            document.write('Verdadeiro')
+        } else {
+            document.write('<br /> Falso <br />')
+        }
+        //false = true
+        if (!(4 == 2)) {
+            document.write('Verdadeiro')
+        } else {
+            document.write('Falso <br />')
+        }
+
+
+
+    </script>
+
+</head>
+
+<body>
+    
+
+
+</body>
+
+</html>
