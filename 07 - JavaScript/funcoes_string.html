@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Funções nativas para manipular strings JavaScript</title>
+
+    <script>
+
+        var nome = ' Jorge Sant Ana '
+
+        //propriedade length: retorna a quantidade de caracteres.
+        document.write(nome.length)
+        //method charAt: informando um indice retornará o caracter contido nele.
+        document.write(nome.charAt(12))
+        //method indexOf: indica em qual indice foi a primeira ocorrência do caracter.
+        document.write(nome.indexOf('g'))
+        //method replace: substitui indices informando primeiro qual indice deseja altera e depois pelo que deseja trocar.
+        document.write(nome.replace('Sant Ana', 'Silva'))
+        //method substr: Extrai um número de caracteres de uma string, de um índice inicial (posição).
+        document.write(nome.substr(6, 4))
+        //method toLowercase
+        document.write(nome.toLowerCase())
+        //method toUppercase
+        document.write(nome.toUpperCase())
+        //method trim: remove os espaços nas extremidades dos caracteres.
+        document.write('-' + nome.trim() + '-')
+
+    </script>
+
+</head>
+
+<body>
+
+    
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Eventos com janela JavaScript</title>
+
+  <style>
+    div {
+      border: 1px solid black;
+      width: 200px;
+      height: 100px;
+      overflow: scroll;
+    }
+  </style>
+
+</head>
+
+<body onresize="myFunction()">
+
+  <!-- onresize -->
+  <p>Try to resize the browser window to display the windows height and width.</p>
+
+  <p id="demo"></p>
+
+  <p><strong>Note:</strong> this example will not work properly in IE8 and earlier. IE8 and earlier do not support the
+    outerWidth/outerHeight propery of the window object.</p>
+
+  <script>
+    function myFunction() {
+      var w = window.outerWidth;
+      var h = window.outerHeight;
+      var txt = "Window size: width=" + w + ", height=" + h;
+      document.getElementById("demo").innerHTML = txt;
+    }
+  </script>
+
+
+  <!-- onscroll -->
+  <h1>The onscroll Event</h1>
+  <p>Try the scrollbar in div.</p>
+
+  <div onscroll="myFunction2()">In my younger and more vulnerable years my father gave me some advice that I've been
+    turning over in my mind ever since.
+    <br><br>
+    'Whenever you feel like criticizing anyone,' he told me, just remember that all the people in this world haven't had
+    the advantages that you've had.'
+  </div>
+
+  <p>Scrolled <span id="demo2">0</span> times.</p>
+
+  <script>
+    let x = 0;
+    function myFunction2() {
+      document.getElementById("demo2").innerHTML = x += 1;
+    }
+  </script>
+
+</body>
+
+</html>
