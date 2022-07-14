@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript</title>
+
+    <script>
+
+        //var listaConvidados = ['Jorge', 'Jamilton', 'José', 'Ana', 'Maria']
+
+        var listaConvidados = Array()
+
+        listaConvidados['a'] = 'Jorge'
+        listaConvidados[10] = 'Jamilton'
+        listaConvidados['zebra'] = 'José'
+        listaConvidados[-1] = 'Ana'
+        listaConvidados[true] = 'Maria'
+
+        console.log(listaConvidados)
+
+        for(var x in listaConvidados){
+            console.log('Indice ' + x + ' valor ' + listaConvidados[x])
+        }
+
+        //outro exemplo usando objeto
+
+        const pessoa = {
+            nome: 'Jhonatan',
+            idade: 25
+        }
+        // chave = key-value
+        for(let chave in pessoa) {
+            console.log(chave, pessoa['nome'])
+        }
+
+        //outro exemplo simples
+
+        const cores = ['Vermelho', 'Azul', 'Verde']
+
+        for (let indice in cores) {
+            console.log(indice, cores[indice])
+        }
+        
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>

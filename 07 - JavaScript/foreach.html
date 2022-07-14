@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>JavaScript</title>
+
+    <script>
+
+        /*
+        O método forEach passa uma função de callback para cada elemento do array juntamente aos seguintes parâmetros:
+            Valor atual (obrigatório) - O valor do elemento atual do array.
+            Índice (opcional) - O número do índice do elemento atual.
+            Array (opcional) - O objeto de array ao qual o elemento atual pertence.
+
+            Para que serve o laço de repetição foreach? Essa estrutura é utilizada para iteração de listas, ou seja, é uma estrutura simplificada do laço for que tem por objetivo tornar o código mais legível e a codificação mais rápida.
+
+            Ainda que a estrutura foreach facilite a codificação, em relação a performance nada se altera. Isso porque, a estrutura foreach, nos bastidores, funciona de maneira análoga a estrutura "for". Logo, a única diferença está na forma como codificamos e não na forma como o código é executado.
+        */
+
+        var listaFuncionarios = ['Viviane', 'Rosâgenla', 'Miguel', 'Lucas', 'Fernanda']
+        // forma mais organizada e legível
+        var lf = function(valor, indice) {
+            console.log(valor, indice)
+        }
+
+        listaFuncionarios.forEach(lf)
+
+
+        /*
+        console.log(listaFuncionarios)
+        document.write(listaFuncionarios[3])
+
+        listaFuncionarios.forEach(function(valor, indice, array) {
+            console.log('indice ' + indice + ' | valor: ' + valor)
+
+            if(valor == 'Lucas') {
+                array[indice] = 'Um novo valor'
+            }
+
+        })
+
+        console.log(listaFuncionarios)
+        document.write('<br />' + listaFuncionarios[3])
+        */
+        
+    </script>
+
+</head>
+
+<body>
+
+
+
+</body>
+
+</html>
